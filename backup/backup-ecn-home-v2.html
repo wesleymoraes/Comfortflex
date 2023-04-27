@@ -1,0 +1,104 @@
+<header class="main-header">
+    <button class="main-header__icons--toggleMenu mobile" title="Menu">
+      <i class="icon-menu" aria-label="Menu"></i>
+    </button>
+    <a href="/" alt="ramarim" class="main-header__logo">
+      <img src="/arquivos/logo.png" alt="ramarim" class="logo1" width="200" height="35" />
+    </a>
+    
+    <nav class="main-menu">
+      <div class="mobile main-menu__header">
+        <div href="#" class="main-menu__header--login" onclick="vtexid.start()" title="Login">
+          <i class="icon-login"></i> Entrar
+        </div>
+        <button class="main-menu__header--close">
+          <i class="icon-close"></i>
+        </button>
+      </div>
+      <div class="main-menu__wrapper">
+         <vtex.cmc:menu />
+      </div>
+      <div class="mobile main-menu__footer">
+        <a
+          href="/institucional/onde-encontrar"
+          title="Nossas lojas"
+          class="main-menu__footer--link"
+        >
+          <i class="icon-stores"></i> Nossas Lojas
+        </a>
+        <a href="/wishlist" title="Fale Conosco" class="main-menu__footer--link">
+          <i class="icon-heart"></i> Favoritos
+        </a>
+      </div>
+    </nav>
+    <div class="main-header__icons">
+      <button class="main-header__icons--search" title="Busca">
+        <i class="icon-search"></i> Busca
+      </button>
+      <div href="#" class="main-header__icons--login" title="Login">
+        <i class="icon-login"></i> Entrar
+        <ul class="main-header__icons--loginOptions">
+          <li>
+            <a href="#" onclick="vtexid.start({returnUrl: ''})" title="Login / Cadastro"
+              >Entrar/Cadastrar</a
+            >
+          </li>
+          <li>
+            <a href="/account">Minha conta</a>
+          </li>
+          <li>
+            <a href="/_secure/account/orders#/orders">Meus pedidos</a>
+          </li>
+        </ul>
+      </div>
+      <button class="main-header__icons--cart" title="Meu carrinho">
+        <i class="icon-cart"></i>
+        <span class="main-header__icons--cart__badge">0</span>
+      </button>
+    </div>
+
+    <!-- HEADER ICONS -->
+    <div class="max-container" style="display: none">
+      <div class="main-header__icons">
+        <button class="main-header__icons--toggleMenu mobile" title="Menu">
+          <i class="icon-menu" aria-label="Menu"></i>
+        </button>
+        <a
+          href="/institucional/onde-encontrar"
+          title="Nossas lojas"
+          class="main-header__icons--stores"
+        >
+          <i class="icon-stores"></i> Lojas Parceiras
+        </a>
+        <a href="/wishlist" title="Favoritos" class="main-header__icons--call">
+          <i class="icon-heart"></i> Favoritos
+        </a>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <aside class="header-search">
+      <button class="header-search__close">
+        <i class="icon-close"></i>
+      </button>
+      <form class="header-search__form">
+        <div class="header-search__form--wrapper max-container">
+          <input
+            type="text"
+            name="term"
+            placeholder="O que você procura ?"
+            class="header-search__form--input max-container"
+          />
+          <button class="header-search__form--submit">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+      </form>
+      <div class="header-search__result">
+        <div class="max-container"></div>
+        <a class="header-search__link" href="#">ver todos os resultados</a>
+        <span style="display: block; height: 1px; background: #000"></span>
+      </div>
+      <div class="header-search__overlay"></div>
+    </aside>
+  </header>
